@@ -1,0 +1,49 @@
+@media (max-width: 1180px) {
+    .MovieRow-moviesPage .container-movieRow {
+        padding: 60px;
+    }
+
+    .MovieRow-moviesPage .container-movieRow .image-poster {
+        width: 16vw;
+    }
+}
+
+@media (max-width: 980px) {
+    .MovieRow-moviesPage .container-movieRow .image-poster {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .MovieRow-moviesPage .container-movieRow .image-poster {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .MovieRow-moviesPage .container-movieRow .image-poster {
+        width: 31vw;
+    }
+}
+
+@media (max-width: 560px) {
+    .MovieRow-moviesPage .container-movieRow {
+        padding: 0;
+    }
+
+    .MovieRow-moviesPage .container-movieRow .posters {
+        overflow-x: auto;
+    }
+
+    .MovieRow-moviesPage .container-movieRow .posters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .MovieRow-moviesPage .container-movieRow .image-poster {
+        width: 42vw;
+    }
+
+    .MovieRow-moviesPage .container-movieRow .image-poster:hover {
+        transform: scale(0.9);
+    }
+}

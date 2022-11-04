@@ -1,0 +1,40 @@
+@media(max-width: 560px) {
+    .LoginBox-component {
+        height: 70vh;
+    }
+
+    .LoginBox-component .container-loginBox {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-loginBox .title h1 {
+        font-size: 30px;
+    }
+    
+    .container-loginBox .title span {
+        font-size: 12px;
+    }
+    
+    .container-loginBox .form {
+        width: 100%;
+    }
+
+    .container-loginBox .form-floating {
+        width: 100%;
+    }
+
+    .container-loginBox .form-floating label {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
+    .container-loginBox .forgot-password a {
+        font-size: 12px;
+    }
+
+    .container-loginBox .not-registered a {
+        font-size: 15px;
+    }
+}

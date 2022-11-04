@@ -1,0 +1,68 @@
+.NavbarLogged-component {
+    position: relative;
+    /* background: black; */
+}
+
+.NavbarLogged-component .container-navbar {
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+    padding: 10px 50px;
+    font-family: Mulish,sans-serif;
+}
+
+.NavbarLogged-component .container-navbar a {
+    text-decoration: none;
+}
+
+.NavbarLogged-component .container-navbar .left-side .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffc107;
+}
+
+.NavbarLogged-component .container-navbar .left-side .navbar-brand #film-icon {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.NavbarLogged-component .container-navbar .left-side .navbar-brand h1 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.NavbarLogged-component .container-navbar .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavbarLogged-component .container-navbar .right-side .my-list {
+    margin-right: 20px;
+}
+
+.NavbarLogged-component .container-navbar .right-side a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+}
+
+.NavbarLogged-component .container-navbar .right-side .btn {
+    background: white;
+    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.NavbarLogged-component .container-navbar .right-side .user-icon {
+    margin-right: 10px;
+    font-size: 15px;
+}
+

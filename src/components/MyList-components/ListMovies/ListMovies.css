@@ -1,0 +1,60 @@
+.ListMovies-component .container-listMovies {
+    margin-top: 25px;
+    color: white;
+    padding: 0 10px;
+    font-family: Mulish,sans-serif;
+}
+
+.ListMovies-component .container-listMovies h1 {
+    padding: 0 30px;
+    font-size: 30px;
+}
+
+.ListMovies-component .container-listMovies .posters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* overflow-x: hidden; */
+}
+
+.ListMovies-component .container-listMovies .image {
+    position: relative;
+}
+
+.ListMovies-component .container-listMovies .image-poster {
+    width: 13.5vw;
+    border-radius: 25px;
+    transform: scale(0.9);
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: all 0.2s;
+}
+
+.ListMovies-component .container-listMovies .image-poster:hover {
+    transform: scale(.950);
+}
+
+.ListMovies-component .container-listMovies .btn-removeList {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    border: none;
+    /* border-radius: 25px; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* transform: scale(0.9); */
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.423);
+    color: white;
+    transition: all 0.2s;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.ListMovies-component .container-listMovies .btn-removeList:hover {
+    background: rgba(0, 0, 0, 0.652);
+}

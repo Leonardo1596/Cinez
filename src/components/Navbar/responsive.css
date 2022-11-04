@@ -1,0 +1,28 @@
+@media(max-width: 780px) {
+    .container-navbar {
+        padding: 10px 30px;
+    }
+}
+
+@media(max-width: 560px) {
+    .container-navbar .left-side .navbar-brand #film-icon {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    .container-navbar .left-side .navbar-brand h1 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .container-navbar .right-side .btn span {
+        display: none;
+    }
+
+    .container-navbar .right-side .btn-login {
+        margin-right: 10px;
+    }
+
+    .container-navbar .right-side .icon {
+        margin-right: 0;
+    }
+}

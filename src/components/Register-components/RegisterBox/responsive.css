@@ -1,0 +1,36 @@
+@media(max-width: 560px) {
+    .RegisterBox-component .container-registerBox {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-registerBox .title h1 {
+        font-size: 30px;
+    }
+    
+    .container-registerBox .title span {
+        font-size: 12px;
+    }
+    
+    .container-registerBox .form {
+        width: 100%;
+    }
+
+    .container-registerBox .form-floating {
+        width: 100%;
+    }
+
+    .container-registerBox .form-floating label {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
+    .container-registerBox .terms a {
+        font-size: 12px;
+    }
+
+    .container-registerBox .already-registered a {
+        font-size: 15px;
+    }
+}
