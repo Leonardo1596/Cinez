@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './MovieRow.css';
 import './responsive.css';
 import axios from 'axios';
+import { FaRegPlayCircle } from "react-icons/fa";
+
 
 const MovieRow = (props) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     localStorage.removeItem('Movie');
+    localStorage.removeItem('WatchMovie');
 
     function fetchMovies() {
       let token = localStorage.getItem('token');
@@ -25,8 +28,13 @@ const MovieRow = (props) => {
   }, [])
 
   function handleClickImage(movie) {
+    localStorage.setItem('Movie', JSON.stringify(movie))
+  }
+
+  function handleClickPlayIcon(movie) {
     console.log(movie);
-    localStorage.setItem('Movie', JSON.stringify(movie));
+    localStorage.setItem('WatchMovie', JSON.stringify(movie));
+    window.location.href = '/assistir';
   }
 
   function addToList(movie) {
@@ -78,8 +86,7 @@ const MovieRow = (props) => {
         <div className='posters'>
           {movies.map((movie) => (
             <div className='image'>
-              <a href='/assistir'><img src={movie.poster_path} className="image-poster" alt="poster" onClick={() => handleClickImage(movie)} draggable={false} /></a>
-              <button className='btn-addToList' onClick={() => addToList(movie)}>Adicionar à lista</button>
+              <a href="/filme"><img src={movie.poster_path} className="image-poster" alt="poster" onClick={() => handleClickImage(movie)} draggable={false} /></a>
             </div>
           ))}
         </div>

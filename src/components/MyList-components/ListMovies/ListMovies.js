@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ListMovies.css';
+import './responsive.css';
 import axios from 'axios';
 
 const ListMovies = (props) => {
@@ -77,7 +78,7 @@ const ListMovies = (props) => {
         <div className='posters'>
           {userInfo.movies && userInfo.movies.map((movie) => (
             <div className='image'>
-              <a href="assistir"><img src={movie.poster_path} className="image-poster" alt="poster" onClick={() => handleClickImage(movie)} draggable={false} /></a>
+              <a href="/filme"><img src={movie.poster_path} className="image-poster" alt="poster" onClick={() => handleClickImage(movie)} draggable={false} /></a>
               <button className='btn-removeList' onClick={() => removeList(movie)}>Remover da lista</button>
             </div>
           ))}

@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import './Movies.css';
+import Background from '../../components/Movie-components/Background/Background';
 import NavbarLogged from '../../components/NavbarLogged/NavbarLogged';
-import MovieRow from '../../components/Movies-components/MovieRow/MovieRow';
+import MovieInfo from '../../components/Movie-components/MovieInfo/MovieInfo';
 import Loading from '../../components/Loading/Loading';
+import './Movie.css';
 import axios from 'axios';
 
-const Movies = () => {
-  const [userInfo, setUserInfo] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
 
+const Movie = () => {
+  const [movie, setMovie] = useState([]);
+  const [userInfo, setUserInfo] = useState({});
 
   useEffect(() => {
+    function getMovie() {
+      const retrievedMovie = localStorage.getItem('Movie');
+      setMovie(JSON.parse(retrievedMovie));
+    }
+    getMovie();
 
     // Get user informations
     function getUserInfo() {
@@ -18,9 +24,6 @@ const Movies = () => {
         .then(response => {
           // console.log(response.data.userInfo);
           setUserInfo(response.data.userInfo);
-          setTimeout(() => {
-            setIsLoading(false);
-          }, '500');
         })
         .catch(error => {
           // console.log(error);
@@ -29,25 +32,25 @@ const Movies = () => {
     getUserInfo();
   }, [])
 
-  if (isLoading) {
+  if (!movie) {
     return (
       <div style={{
         backgroundColor: '#020202',
         height: '100vh',
         width: '100vw'
       }}>
-        <NavbarLogged userInfo={userInfo} />
         <Loading />
       </div>
     )
   }
 
   return (
-    <div className='Movies'>
+    <div className='Movie'>
+      <Background movie={movie} />
       <NavbarLogged userInfo={userInfo} />
-      <MovieRow userInfo={userInfo} />
+      <MovieInfo movie={movie} userInfo={userInfo} />
     </div>
   )
 }
 
-export default Movies
+export default Movie

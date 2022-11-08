@@ -1,0 +1,85 @@
+@media (max-width: 1110px) {
+    .MovieInfo-component .container-movieInfo .poster {
+        display: none;
+    }
+
+    .MovieInfo-component .container-movieInfo .info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .MovieInfo-component .container-movieInfo {
+        width: 100vw;
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .releaseDate-category {
+        font-size: 14px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .releaseDate-category .category {
+        margin-right: 0;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .overview span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .MovieInfo-component .container-movieInfo {
+        padding: 0 30px;
+        padding-top: 100px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info {
+        margin-left: 0;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .title h1 {
+        font-size: 30px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .releaseDate-category {
+        font-size: 14px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .overview span {
+        font-size: 14px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .buttons .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .MovieInfo-component .container-movieInfo {
+        padding-top: 40px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .buttons {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .buttons .btn {
+        margin-bottom: 20px;
+    }
+
+    .MovieInfo-component .container-movieInfo .info .buttons .btn-addList {
+        margin-bottom: 0;
+    }
+}

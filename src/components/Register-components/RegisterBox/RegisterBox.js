@@ -10,10 +10,14 @@ const RegisterBox = () => {
         const password = document.getElementById('floatingPassword').value;
         const passwordAgain = document.getElementById('floatingPasswordAgain').value;
 
+        const avatar = ['anime.jpg', 'spiderman.jpg', 'thor.jpg', 'tonystark.jpg'];
+        const randomAvatar = Math.floor(avatar.length * Math.random());
+
         let body = {
             username: username,
             email: email,
-            password: password
+            password: password,
+            avatar: avatar[randomAvatar]
         };
 
         axios.post('http://10.147.17.182:8000/auth/sign-up', body)
@@ -23,10 +27,8 @@ const RegisterBox = () => {
                     const token = response.data.token;
                     localStorage.setItem("token", token);
 
-
                     // Saving userInfo on variable
                     const userInfo = response.data.userProfile;
-
 
                     // Send userInfo back to server
                     function sendUserInfo() {
@@ -39,9 +41,6 @@ const RegisterBox = () => {
                             }));
                     }
                     sendUserInfo();
-
-
-
                     window.location.href = '/filmes'
                 }
             })
@@ -49,6 +48,7 @@ const RegisterBox = () => {
                 console.log(error);
             });
     }
+    
 
     function handleKeyUp(e) {
         if (e.keyCode === 13) {

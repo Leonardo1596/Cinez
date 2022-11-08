@@ -1,5 +1,6 @@
 .Navbar-component {
     position: relative;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.314);
     /* background: black; */
 }
 

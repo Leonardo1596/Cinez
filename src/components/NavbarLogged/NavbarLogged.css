@@ -1,5 +1,6 @@
 .NavbarLogged-component {
     position: relative;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.314);
     /* background: black; */
 }
 
@@ -16,6 +17,15 @@
 
 .NavbarLogged-component .container-navbar a {
     text-decoration: none;
+}
+
+.NavbarLogged-component .container-navbar .sidebar {
+    display: none;
+}
+
+.NavbarLogged-component .container-navbar .left-side {
+    display: flex;
+    align-items: center;
 }
 
 .NavbarLogged-component .container-navbar .left-side .navbar-brand {
@@ -35,6 +45,22 @@
     font-size: 30px;
 }
 
+.NavbarLogged-component .container-navbar .left-side .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 70px;
+}
+
+.NavbarLogged-component .container-navbar .left-side .links a {
+    color: rgb(170, 170, 170);
+    margin-right: 30px;
+}
+
+.NavbarLogged-component .container-navbar .left-side .links a:hover {
+    color: white;
+}
+
 .NavbarLogged-component .container-navbar .right-side {
     display: flex;
     flex-direction: row;
@@ -42,27 +68,29 @@
     justify-content: center;
 }
 
-.NavbarLogged-component .container-navbar .right-side .my-list {
-    margin-right: 20px;
-}
-
 .NavbarLogged-component .container-navbar .right-side a {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 50px;
+    color: white;
 }
 
-.NavbarLogged-component .container-navbar .right-side .btn {
-    background: white;
-    border-radius: 25px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: black;
+.NavbarLogged-component .container-navbar .right-side .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.NavbarLogged-component .container-navbar .right-side .user-icon {
-    margin-right: 10px;
-    font-size: 15px;
+.NavbarLogged-component .container-navbar .right-side .dropdown .image-dropdown {
+    color: white;
+}
+
+.NavbarLogged-component .container-navbar .right-side .dropdown .image-dropdown:hover {
+    color: orange;
+}
+
+.NavbarLogged-component .container-navbar .right-side .dropdown-menu {
+    width: 100%;
 }
 

@@ -11,7 +11,7 @@ const Homepage = () => {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, '1000');
+  }, '500');
 
   if (isLoading) {
     return (

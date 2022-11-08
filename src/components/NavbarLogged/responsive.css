@@ -2,9 +2,54 @@
     .NavbarLogged-component .container-navbar {
         padding: 10px 30px;
     }
+
+    .NavbarLogged-component .container-navbar .sidebar {
+        display: block;
+    }
+    
+    .NavbarLogged-component .container-navbar .sidebar .hamburger-icon {
+        color: white;
+        font-size: 28px;
+    }
+
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas {
+        background: black;
+    }
+
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas .offcanvas-body .links {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas .offcanvas-body .links a {
+        margin-bottom: 20px;
+        color: inherit;
+    }
+
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas .offcanvas-header .btn {
+        color: white;
+        font-size: 30px;
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+
+    .NavbarLogged-component .container-navbar .left-side {
+        display: none;
+    }
+}
+
+@media(max-width: 640px) {
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas {
+        width: 350px;
+    }
 }
 
 @media(max-width: 560px) {
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas {
+        width: 300px;
+    }
+
     .NavbarLogged-component .container-navbar .left-side .navbar-brand #film-icon {
         font-size: 35px;
         margin-right: 10px;
@@ -14,4 +59,10 @@
         margin-top: 10px;
         font-size: 30px;
     }
+}
+
+@media(max-width: 440px) {
+    .NavbarLogged-component .container-navbar .sidebar .offcanvas {
+        width: 250px;
+    }   
 }

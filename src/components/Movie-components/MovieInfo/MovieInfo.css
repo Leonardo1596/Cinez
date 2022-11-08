@@ -1,0 +1,69 @@
+.MovieInfo-component {
+    position: relative;
+}
+
+.MovieInfo-component .container-movieInfo {
+    display: flex;
+    padding: 0 100px;
+    padding-top: 100px;
+    color: white;
+    font-family: Mulish,sans-serif;
+}
+
+.MovieInfo-component .container-movieInfo .poster img {
+    width: 250px;
+    border-radius: 12px;
+}
+
+.MovieInfo-component .container-movieInfo .info {
+    padding-top: 20px;
+    margin-left: 60px;
+    width: 720px;
+}
+
+.MovieInfo-component .container-movieInfo .info .releaseDate-category {
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.MovieInfo-component .container-movieInfo .info .releaseDate-category .category {
+    text-transform: capitalize;
+}
+
+.MovieInfo-component .container-movieInfo .info .releaseDate-category span {
+    margin-right: 50px;
+}
+
+.MovieInfo-component .container-movieInfo .info .overview span {
+    font-size: 15px;
+}
+
+.MovieInfo-component .container-movieInfo .info .buttons {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.MovieInfo-component .container-movieInfo .info .buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.MovieInfo-component .container-movieInfo .info .buttons .icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.MovieInfo-component .container-movieInfo .info .buttons .plus-icon {
+    font-size: 23px;
+}
