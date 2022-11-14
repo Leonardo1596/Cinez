@@ -45,6 +45,16 @@
     height: 60px;
 }
 
+.container-loginBox .form .error-email, .error-password {
+    padding: 0 20px;
+    padding-top: 5px;
+}
+
+.container-loginBox .form .error-email span, .error-password span {
+    color: red;
+    font-size: 13px;
+}
+
 .container-loginBox .forgot-password {
     width: 100%;
     text-align: end;
@@ -75,6 +85,11 @@
     text-align: center;
     /* height: 60px; */
     /* border-radius: 25px; */
+}
+
+.container-loginBox .error span {
+    color: red;
+    font-size: 14px;
 }
 
 .container-loginBox .button-login .btn-login {
